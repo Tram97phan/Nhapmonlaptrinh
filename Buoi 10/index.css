@@ -1,0 +1,43 @@
+#header {
+    background-color:crimson;
+    height: 300px;
+}
+#main {
+    background-color: rgb(255, 231, 221);
+    height: 500px;
+    float: left;
+    width: 70%;
+    overflow: scroll;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    font-size: x-large;
+}
+#sidebar {
+    background-color: darkseagreen;
+    height: 500px;
+    float: left;
+    width: 30%;
+}
+#footer {
+    background-color: dodgerblue;
+    height: 100px;
+    clear: both;
+}
+body {
+    background-image: url("Nen.jpeg");
+}
+
+#header, #main, #sidebar, #footer {
+    opacity: 0.8;
+}
+h1 {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+}
+.i1 {
+    height: 300px;
+}
+.i2 {
+    width: 100%;
+}
