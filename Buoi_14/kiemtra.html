@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: coral;
+            height: 100px;
+            position: relative;
+        }
+        .left {
+            background-color: cyan;
+            height: 500px;
+            width: 25%;
+            float: left;
+        }
+        main {
+            background-color: plum;
+            height: 500px;
+            width: 50%;
+            float:left;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        .right {
+            background-color: rgb(144, 214, 87);
+            height: 500px;
+            width: 25%;
+            float:left;
+        }
+        footer {
+            background-color: orange;
+            height: 100px;
+            clear: both;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        header li {
+            display: inline;
+            background-color: whitesmoke;
+            padding: 3px;
+            margin: 5px;
+
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+        }
+        @media screen and (max-width: 500px) {
+           .left, .right {
+               width: 100%;
+           }
+            main {
+                width:100%;
+            }
+          
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Logo</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class=left>Đây là nội dung bên trái</div>
+    <main>Đây là nội dung chính
+        Học viên làm bài test trong 30 phút. Yêu cầu:
+        <ol>
+            <li> Tạo giao diện theo mẫu (chú ý CSS các phần như menu, pading, margin...)</li>
+            <li>Responsive giao diện khi max-width = 500px thì khối "Đây là nội dung bên trái",
+                 content ở giữa và "Đây là nội dung bên phải chiếm 100% width màn hình"</li>
+            <li>Đưa lên GitHub và gửi link theo mẫu của giảng viên bào đây</li>
+        </ol>
+
+       Chúc các bạn làm bài tốt!
+    </main>
+    <div class="right">Đây là nội dung bên phải</div>
+    <footer>Đây là footer</footer>
+</body>
+</html>
