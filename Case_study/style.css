@@ -71,7 +71,7 @@ header {
 .banner__text {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 95%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -83,13 +83,18 @@ header {
     opacity: 0;
     flex-basis: 70%;
 }
-/* Section 1 */
 
-.section-1 .question-box {
-    width: 70%;
+
+
+
+/* Section 1 */
+.question-box {
+    width: 80%;
+    margin: 20px;
+    text-align: center;
     margin: auto;
     margin-top: 30px;
-
+   
 }
 .section-1 .question-content {
     width: 100%;
@@ -103,6 +108,7 @@ header {
 }
 .question-img {
     position: relative;
+   
 }
 .question-img img {
     width: 100%;
@@ -143,14 +149,18 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 5px;
+    height: auto;
 }
 .course {
     display: flex-column;
     width: 30%;
     background: #e0edff ;
-    padding: 10px;
+    padding: 15px;
+    height: auto;
 
 }
+    
+
 /* Section 2 */
 .section-2 {
     background: url(https://www.kbc.ast.ac.jp/ryugaku/assets/img/bg_lattice.png);
@@ -163,7 +173,7 @@ header {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; 
     margin:auto;
     margin-top: 20px;
 }
@@ -181,6 +191,7 @@ header {
     border-radius: 7px;
     background-color: white;
 }
+
 .flex__item1 .table {
     width: 100%;
 }
@@ -198,6 +209,7 @@ header {
     padding-right: 100px;
 
 }
+
 /* Campus Life */
 .carousel {
     width: 100%;
@@ -263,4 +275,64 @@ footer {
     color: white;
     height: 50px;
     padding-top: 15px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .banner__text-2 h1 {
+        font-size: 25px ;
+       
+    }
+    .banner__text-2 {
+        width: 250px;
+    }
+    .banner__text {
+        top: 30%;
+        right: 5%;
+    }
+    #banner {
+        background-position: center;
+        background-size: 300%;
+        height: 60vh;
+        background-repeat: no-repeat;      
+    }
+    .header__inner-2, .header__inner-3 {
+        display: none;
+    }
+    .header__inner-1 {
+        width: 300px;
+        transform: translateX(20em);
+    }
+        
+    h1 {
+        font-size: 30px;
+    }
+    .course {
+        width: 100%;
+        margin: 10px;
+        
+    }
+    .btn {
+        width: 80%;
+        font-size: 20px;
+        padding: 10px 20px;
+        
+    }
+
+    .banner-contact {
+        padding: 25px;
+        padding-top: 40px;
+        font-size: 15px;
+      }
+    
+    .contact {
+        width: 90%;
+        padding-left: 10px;
+        
+    }
+    .sns-btn img {
+      width: 60px;
+    }
+
+    
 }
